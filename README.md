@@ -15,6 +15,12 @@ For example, to run the __select_all__ command and then run the __copy__ command
 window.run_command("chain",{"commands":[["select_all"],["copy"]]})
 ```
 
+Or if you wanted to focus the first group in a window:
+
+```python
+ window.run_command("chain",{"commands":[["focus_group",{"group":0}]]})
+```
+
 The point is to be able to build custom key bindings to run a sequence of commands. Lets say you wanted a key binding to duplicate the current file. You could set this key binding:
 
 ```json
